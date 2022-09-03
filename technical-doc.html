@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="technical-doc.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>MC Server Documentation</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Free_3rd_Party_Hosting">Free 3rd Party Hosting</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Free_Desktop_Hosting">Free Desktop Hosting</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Paid_3rd_Party_Hosting">Paid 3rd Party Hosting</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Realm_Hosting">Realm  Hosting</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Free_Multiplayer_Servers">Free Multiplayer Servers</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Free_3rd_Party_Hosting">
+        <header>Free 3rd Party Hosting</header>
+        <p>A free method to host a server via a third-party website portal.</p>
+        <ul>
+          <li>Requires no money!</li>
+          <li>Not as good as the other options.</li>
+        </ul>
+        <code>
+          Typically capped with very low memory and processing power.
+        </code>
+      </section>
+      <section class="main-section" id="Free_Desktop_Hosting">
+        <header>Free Desktop Hosting</header>
+        <p>A very good option if you are able to host it yourself!</p>
+        <ul>
+          <li>Requires no money!</li>
+          <li>Hosting depends on your computer and ability to activate the server with it.</li>
+          <li>Comes with the most freedom to add whatever features, plugins, or mods that you desire</li>
+        </ul>
+        <p>To run your server, you need a .bat file with the following format typed:</p>
+        <code>
+          java -Xmx####M -Xms####M -jar FILE_NAME.jar nogui
+        </code>
+        <p>Working example:</p>
+        <code>
+          java -Xmx1024M -Xms1024M -jar vanilla-1.19.1.jar nogui
+        </code>
+      </section>
+      <section class="main-section" id="Paid_3rd_Party_Hosting">
+        <header>Paid 3rd Party Hosting</header>
+        <p>Similar to desktop hosting, but not free.</p>
+        <p>Usually requires monthly subscription and prices depend on memory needed.</p>
+        <code>
+          1G = 1024M (can be used interchangably in the .bat file as 1G represents 1 gigabyte with this format)
+        </code>
+      </section>
+      <section class="main-section" id="Realm_Hosting">
+        <header>Realm Hosting</header>
+        <p>Paid and stable hosting with official sources.</p>
+        <p>Costs money and can have limitations at times.</p>
+      </section>
+      <section class="main-section" id="Free_Multiplayer_Servers">
+        <header>Free Multiplayer Servers</header>
+        <p>Free, fun, and so much variety!</p>
+        <p>Some servers have microtransactions and can limit your options or enjoyment.</p>
+        <p>Requires server IP's to join such as:</p>
+        <code>
+          mc.hypixel.net
+        </code>
+      </section>
+    </main>
+  </body>
+</html>

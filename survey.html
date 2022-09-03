@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h1 id="title">Survey</h1>
+	  <link rel="stylesheet" href="survey.css" />
+  </head>
+  <body>
+    <p id="description">Help us collect data to better our services!</p>
+    <form id="survey-form" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label id="name-label"> Name
+          <input id="name" type="text" placeholder="Enter your name" required>
+          </input>
+        </label>
+        <label id="email-label"> Email
+          <input id="email" type="email" placeholder="Enter your email" required>
+          </input>
+        </label>
+        <label id="number-label"> Age (Optional)
+          <input id="number" type="number" min="0" max="120" placeholder="Age">
+          </input>
+        </label>
+        <label> What would you like to see implemented?
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Faster load times</option>
+            <option value="2">More features</option>
+          </select>
+        </label>
+        <label> Will you recommend us?</label>
+        <label>
+          <input type="radio" name="recommendation-type" class="inline" value="1"/> Definitely
+          </label>
+          <label>
+          <input type="radio" name="recommendation-type" class="inline" value="2"/> Most definitely
+        </label>
+        <label> What do you like?
+          <label>
+            <input type="checkbox" class="inline" value="1"> Pizza
+            </input>
+          </label>
+          <label>
+            <input type="checkbox" class="inline" value="2"> Cereal
+            </input>
+          </label>
+          <label>
+            <input type="checkbox" class="inline" value="3"> Games
+            </input>
+          </label>
+          <label>
+            <input type="checkbox" class="inline" value="4"> Coding
+            </input>
+          </label>
+        <label> Anything you'd like to tell us?
+          <textarea name="additional" rows="3" cols="30" placeholder="Additional comments here..."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"></input>
+    </form>
+  </body>
+</html>
