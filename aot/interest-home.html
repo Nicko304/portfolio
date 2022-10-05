@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="interest-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <style>
+            #header {
+                /* width: 100%; */
+                height: 500px;
+                /* line-height: 500px;
+                text-align: center; */
+                background-image: url("img/background-img.jpg");
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-shadow: 0px 0px 10px #000;
+                font-size: 1.5rem;
+            }
+            h1 {
+                line-height: 500px;
+            }
+            #main-container {
+                width: 100%;
+                /* background-color: white; */
+                /* margin: 0 auto; */
+                /* display: flex; */
+                /* justify-content: center; */
+                /* align-items: flex-start; */
+                /* background-color: rgb(216, 215, 215); */
+                /* padding: 0; */
+                /* margin: 0; */
+            }
+            #sidebar {
+                background-color: rgb(229, 226, 226);
+                /* width: 25%; */
+                /* height: 100%; */
+                /* padding: 15px; */
+            }
+
+            #sidebar img {
+                max-width: 100%;
+                padding-top: 10px;
+                /* padding: 10px;
+                height: auto; */
+            }
+
+            .caption {
+                text-align: center;
+                margin: 0;
+                padding-top: 10px;
+                padding-bottom: 80px;
+            }
+
+            #content {
+                background-color: lightGray;
+                /* width: 75%; */
+                padding: 15px;
+                /* border-left: 1px solid #000; */
+            }
+
+            /* .left-padding {
+                padding-left: 10px;
+            } */
+            
+
+            #aot-action {
+                width: 300px;
+                height: auto;
+                margin-left: 0;
+                margin-right: 15px;
+                margin-bottom: 15px;
+                /* float: right; */
+                /* margin-left: 15px;
+                margin-bottom: 15px; */
+            }
+            #aot-tree {
+                width: 200px;
+                height: auto;
+                /* float: left; */
+                margin-left: 0;
+                margin-right: 15px;
+                margin-bottom: 15px;
+            }
+            #aot-music {
+                width: 300px;
+                height: auto;
+                /* float: right; */
+                margin-left: 15px;
+                margin-bottom: 15px;
+            }
+
+            @media (min-width: 992px) {
+                #aot-action, #aot-music {
+                    width: 400px;
+                    float: left;
+                    margin-right: 15px !important;
+                    margin-bottom: 15px;
+                }
+                #aot-tree {
+                    width: 300px;
+                    float: right;
+                    margin-left: 15px !important;
+                    margin-bottom: 15px;
+                }
+                #main-container {
+                    width: 950px;
+                }
+            }
+        </style>
+        <title>Nicholas Schumacher | Interests Page</title>
+    </head>
+    <body>
+        <div id="header" class="container-fluid text-center">
+            <h1>Attack on Titan (AOT)</h1>
+        </div>
+        <ul id="navbar">
+            <li>
+                <a id="active" href="interest-home.html">Home</a>
+                <ul>
+                    <li>
+                        <a href="interest-home.html#action">Non-Stop Action</a>
+                    </li>
+                    <li>
+                        <a href="interest-home.html#theme">Thematic Exploration</a>
+                    </li>
+                    <li>
+                        <a href="interest-home.html#music">Top-tier Music</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="interest-gallery.html">Gallery</a>
+            </li>
+        </ul>
+        <div id="main-container" class="container">
+            <div class="row">
+                <div id="content" class="col-12 col-md-12 col-lg-9">
+                    <section id="action">
+                        <h2>Non-stop Action</h2>
+                        <img id="aot-action" class="d-block mx-auto" src="img/aot-action.png" alt="AOT Action Scene"/>
+                        <p>Anime comes in numerous different forms and shapes, often involving fictional worlds with unique concepts. Attack on Titan (AOT) is one of these shows,
+                            that starts off with the last of humanity surviving against man-eating monsters called titans. However, it quickly evolves as the world continues
+                            building, characters are explored, and mysteries behind the titans are slowly revealed. Throughout the entire journey, there is constant
+                            development and many challenges are thrown at the main cast one after another.
+                        </p>
+                        <p>
+                            AOT is fairly fast-paced as the show rarely wastes time. Every scene has its purpose, even when it is not clearly shown. In the later seasons,
+                            there are many moments that show hidden parts or new takes of previous scenes, bringing a whole new meaning to them and the implications of some character's
+                            actions. Throughout the entire series, the main cast deals with many challenging walls and when they are dealing with one huge conflict, they are still
+                            working towards their overarching goal of finding more about titans to stop them for good.
+                        </p>
+                    </section>
+                    <section id="theme">
+                        <h2>Thematic Exploration</h2>
+                        <img id="aot-tree" class="d-block mx-auto" src="img/aot-tree.jpg" alt="AOT Final Season Visual - Eren running towards the tree"/>
+                        <p>
+                            Under the surface of many shows, the viewer is often challenged to think about the implications and morality of actions throughout shows. 
+                            An example would be in Attack on Titan, it appears to be about fighting back against man-eating titans. Without diving too much into spoilers, it
+                            eventually grows into complete war, subjecting characters to commit actions that will make you question who you should support. No single side is shown
+                            to be completely perfect by the end of the series as the evil try to turn good and the good turn to evil. There are many ways that conflict can be
+                            resolved in the show, but every solution has its own benefits, drawbacks, risks, morality, and conflicting support involved. The show goes so much
+                            deeper while many other shows have their own themes to dive in while providing great entertainment and beautiful scenes.
+                        </p>
+                        <p>The show can also be viewed as a tragedy since much of the conflict could be completely prevented if only a few events in the past happened
+                            differently. One example is that much of the xenophobia later in the show was caused by a single man abusing power with a twisted sense for dominating.
+                            His sense for domination led to growing hatred for his people, even though many of them were unwilling (but forced) to follow their current king.
+                            That hatred kept growing for centuries, eventually manifesting into all descendants of that race being outcasted and severely mistreated by the
+                            rest of the world. Even with him long dead, much of the world refused to come to reason with the race, and only grew their hatred as the race began
+                            defending themselves against the rest of the world, resulting in monumental conflict. The race did not wish to fight but whenever they attempted
+                            to reason with the rest of the world, they would be attacked and shunned until some members felt they had no other options left, but violence.
+                        </p>
+                    </section>
+                    <section id="music">
+                        <h2>Top-tier Music</h2>
+                        <img id="aot-music" class="d-block mx-auto" src="img/aot-music.jpg" alt="AOT main cast standing against the titans"/>
+                        <p>As with mostly all animes, AOT has a number of opening and ending sequences for each part of a season. Every opening and ending has stunning music
+                            paired with top-tier animation for viewers to enjoy every single episode with the exception of one ending sequence. In addition to being great
+                            to listen to, these sequences often bring
+                            a sneak peek into what the current portion of the season will be about, but there is also plenty of original content presenting cool hypotheticals,
+                            such as the numrerous type of animal titans that could have existed years before the series takes place. As for that one ending sequence being an
+                            exception, it is often seen as nightmare fuel but is packed with details and backstory of the world of titans that are not revealed until much later
+                            in the series. When combined with the ominous music, the ending is still very captivating and provides a lot of content to speculate about, 
+                            even years after its release.
+                        </p>
+                        <p>Asied from openings, AOT is filled with many outstanding original sound tracks (OSTs) that are played during key scenes and sequences. Most, if not all,
+                            of these OSTs are great to listen to but they also greatly enchance the impact and intensity of scenes throughout the show. These OSTs really
+                            help make the viewer become more immersed in the scenes for greater enjoyment.
+                        </p>
+                    </section>
+                </div>
+                <div id="sidebar" class="col-12 col-lg-3">
+                    <div class="row">
+                        <div class="ttext-center col-6 col-md-3 col-lg-12 mx-auto">
+                            <img src="img/aot-s1-visual.jpg" alt=""/>
+                            <p class="caption">AOT Season 1 Part 2 Visual</p>
+                        </div>
+                        <div class="text-center col-6 col-md-3 col-lg-12 mx-auto">
+                            <img src="img/aot-s2.jpg" alt=""/>
+                            <p class="caption">AOT Season 2 Visual</p>
+                        </div>
+                        <div class="text-center col-6 col-md-3 col-lg-12 mx-auto">
+                            <img src="img/aot-s3-visual.jpg" alt=""/>
+                            <p class="caption">AOT Season 3 Visual</p>
+                        </div>
+                        <div class="text-center col-6 col-md-3 col-lg-12 mx-auto">
+                            <img src="img/aot-new.jpg" alt=""/>
+                            <p class="caption">AOT Season 4 Visual</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Made by Nicholas Schumacher |
+            <a href="mailto:naschuma@usc.edu"><i class="fa fa-envelope"></i></a> 
+            <a href="https://github.com/nicko304" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>

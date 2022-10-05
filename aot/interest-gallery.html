@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="interest-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            #header {
+                width: 100%;
+                height: 350px;
+                line-height: 350px;
+                text-align: center;
+                background-image: url("img/aot-gallery.png");
+                background-size: cover;
+                background-position: center;
+                color: white;
+                text-shadow: 0px 0px 10px #000;
+                font-size: 1.5rem;
+            }
+            #main-container {
+                width: 950px;
+                background-color: lightGray;
+                margin: 0 auto;
+                min-height: 100vh;
+            }
+            h2 {
+                margin-top: 0;
+                padding: 20px 20px 0;
+            }
+            #gallery-container {
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .gallery-item {
+                display: flex;
+                justify-content: space-between;
+                align-items: stretch;
+                flex-wrap: wrap;
+                /* background-color: red; */
+                width: 375px;
+                height: 375px;
+                margin: 10px 10px;
+            }
+
+            .thumbnail-big {
+                width: 100%;
+                height: auto; /* arround 375px */
+            }
+            .thumbnail-normal {
+                width: 177.5px;
+                height: auto; /* arround 177.5 px */
+                position: relative;
+                bottom: 0;
+            }
+            .thumbnail-rectangle {
+                width: 375px;
+                height: auto; /* arround 177.5 px */
+            }
+
+            .img-container {
+                position: relative; /* Needed for absolute position later */
+                /* top: 0;
+                bottom: 0; */
+                margin: 8px 0;
+            }
+            .caption {
+                color: #FFF;
+                background-color: rgba(0, 0, 0, 0.5);
+                position: absolute;
+                top: 0;
+                bottom: 4px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                margin: 0;
+                padding-top: 25%;
+                visibility: hidden;
+            }
+            .thumbnail-big + .caption {
+                padding-top: 177.5px;
+            }
+            .thumbnail-normal + .caption {
+                padding-top: 88px;
+            }
+            .thumbnail-rectangle + .caption {
+                padding-top: 88px;
+            }
+            .img-container:hover .caption {
+                visibility: visible;
+            }
+        </style>
+        <title>Nicholas Schumacher | Interests Page</title>
+    </head>
+    <body>
+        <div id="header">
+            <h1>Gallery</h1>
+        </div>
+        <ul id="navbar">
+            <li>
+                <a href="interest-home.html">Home</a>
+                <ul>
+                    <li>
+                        <a href="interest-home.html#action">Non-Stop Action</a>
+                    </li>
+                    <li>
+                        <a href="interest-home.html#theme">Thematic Exploration</a>
+                    </li>
+                    <li>
+                        <a href="interest-home.html#music">Top-tier Music</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a id="active" href="interest-gallery.html">Gallery</a>
+            </li>
+        </ul>
+        <div id="main-container">
+            <h2>Scenes from Attack on Titan</h2>
+            <div id="gallery-container">
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <img class="thumbnail-big" src="img/aot-rumbling.png" alt=""/>
+                        <p class="caption">The Rumbling</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <img class="thumbnail-rectangle" src="img/aot-spread.jpg" alt=""/>
+                        <p class="caption">Garrison Charging Into Battle</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-beast.png" alt=""/>
+                        <p class="caption">The Beast Titan</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-smiling.png" alt="Smiling Titan about to eat a human"/>
+                        <p class="caption">A Nice Meal</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-versus.jpg" alt="Levi and Kenny dueling"/>
+                        <p class="caption">Two Deadly Fighters</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-titans1.png" alt="Armoured Titan fightinng the Attack Titan"/>
+                        <p class="caption">Two Titan Powers</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-grisha.png" alt="Grisha visibly losing his mind"/>
+                        <p class="caption">Man Goes Insane</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-normal" src="img/aot-yelena-face.png" alt="Yelena making a unique face"/>
+                        <p class="caption">Two Untrusting Sides</p>
+                    </div>
+                </div> 
+                <div class="gallery-item">
+                    <div class="img-container">
+                        <img class="thumbnail-rectangle" src="img/aot-ocean.png" alt="Eren pointing towards the ocean"/>
+                        <p class="caption">"Will we ever be free?"</p>
+                    </div>
+                    <div class="img-container">
+                        <img class="thumbnail-rectangle" src="img/aot-yelena-rockets.png" alt="Yelena celebrating blimps being shot down"/>
+                        <p class="caption">Armies Shot Down</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            Made by Nicholas Schumacher | 
+            <a href="mailto:naschuma@usc.edu"><i class="fa fa-envelope"></i></a> 
+            <a href="https://github.com/nicko304" target="_blank"><i class="fa fa-github"></i></a>
+        </div>
+    </body>
+</html>
